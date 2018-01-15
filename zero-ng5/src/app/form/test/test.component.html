@@ -1,0 +1,85 @@
+<form nz-form [formGroup]="validateForm" class="ant-advanced-search-form">
+  <div nz-row [nzGutter]="10">
+    <div nz-col nzLg=4 nzSm=6 *ngFor="let control of controlArray" [style.display]="control.show?'block':'none'">
+      <div nz-form-item nz-row>
+        <div nz-form-label nz-col [nzSpan]="6">
+          <label [attr.for]="'field'+control.index">Field {{control.index}}</label>
+        </div>
+        <div nz-form-control nz-col [nzSpan]="18">
+          <nz-input [nzSize]="'small'" [nzPlaceHolder]="'placeholder'" [formControlName]="'field'+control.index" [nzId]="'field'+control.index"></nz-input>
+          <div nz-form-explain *ngIf="getFormControl('field'+control.index).dirty&&getFormControl('field'+control.index).hasError('field'+control.index)">The input is not valid E-mail!
+          </div>
+          <div nz-form-explain *ngIf="getFormControl('field'+control.index).dirty&&getFormControl('field'+control.index).hasError('required')">Please input your E-mail!
+          </div>
+        </div>
+      </div>
+    </div>
+    <div nz-col nzLg=4 nzSm=6 style="text-align: right;">
+      <button nz-button [nzType]="'primary'" (click)="search()">Search</button>
+      <button nz-button (click)="resetForm()">Clear</button>
+      <a style="margin-left:8px;font-size:12px;" (click)="toggleCollapse()">
+        Collapse
+        <i class="anticon" [class.anticon-down]="isCollapse" [class.anticon-up]="!isCollapse"></i>
+      </a>
+    </div>
+    <div nz-col nzLg=4 nzSm=6 style="display:block">
+      <div nz-form-item nz-row>
+        <div nz-form-label nz-col [nzSpan]="6">
+          <label for="birthDay">birthDay</label>
+        </div>
+        <div nz-form-control nz-col [nzSpan]="18">
+          <nz-datepicker formControlName="birthDay" nzShowTime="true" [nzPlaceHolder]="'Choose your birthday'" formControlName="picker"
+            style="width: 100%;" [nzSize]="'small'"></nz-datepicker>
+        </div>
+      </div>
+    </div>
+    <div nz-col nzLg=4 nzSm=6 style="display:block">
+      <div nz-form-item nz-row>
+        <div nz-form-label nz-col [nzSpan]="6">
+          <label for="mselect">mselect</label>
+        </div>
+        <div nz-form-control nz-col [nzSpan]="18">
+          <nz-select formControlName="mselect" nzShowSearch>
+            <nz-option *ngFor="let option of options | async" [nzLabel]="option.label" [nzValue]="option.value" [nzDisabled]="option.disabled">
+            </nz-option>
+          </nz-select>
+        </div>
+      </div>
+    </div>
+    <div nz-col nzLg=4 nzSm=6 style="display:block">
+      <div nz-form-item nz-row>
+        <div nz-form-label nz-col [nzSpan]="6">
+          <label for="radio">radio</label>
+        </div>
+        <div nz-form-control nz-col [nzSpan]="18">
+          <nz-radio-group formControlName="radio">
+            <label *ngFor="let option of options | async" nz-radio [nzValue]="option.value">
+              <span>{{option.label}}</span>
+            </label>
+            
+            <!-- 
+            <label nz-radio [nzValue]="'B'">
+              <span>B</span>
+            </label>
+            <label nz-radio [nzValue]="'C'">
+              <span>C</span>
+            </label>
+            <label nz-radio [nzValue]="'D'">
+              <span>D</span>
+            </label> -->
+          </nz-radio-group>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div nz-row>
+    <div nz-col [nzSpan]="24" style="text-align: right;">
+      <button nz-button [nzType]="'primary'" (click)="search()">Search</button>
+      <button nz-button (click)="resetForm()">Clear</button>
+      <a style="margin-left:8px;font-size:12px;" (click)="toggleCollapse()">
+        Collapse
+        <i class="anticon" [class.anticon-down]="isCollapse" [class.anticon-up]="!isCollapse"></i>
+      </a>
+    </div>
+  </div>
+</form>
