@@ -1,0 +1,158 @@
+[
+  {
+    "id": "1",
+    "title": "사용자 관리",
+    "childs": [
+      {
+        "id": "2",
+        "path": "/account/account_list",
+        "title": "회원 조회"
+      },
+      {
+        "id": "3",
+        "path": "/account/account_manage",
+        "title": "계정 등록 / 조회"
+      },
+      {
+        "id": "4",
+        "path": "/account/agency_manage",
+        "title": "고객사 관리"
+      },
+      {
+        "id": "5",
+        "path": "/account/auth_manage",
+        "title": "권한 관리"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "title": "캠페인 관리",
+    "childs": [
+      {
+        "id": "7",
+        "path": "/campaign/campaign_search",
+        "title": "광고 조회"
+      },
+      {
+        "id": "8",
+        "path": "/campaign/campaign_manage",
+        "title": "광고 등록"
+      },
+      {
+        "id": "9",
+        "path": "/campaign/campaign_bulk",
+        "title": "일괄 생성"
+      },
+      {
+        "id": "10",
+        "path": "/campaign/campaign_reserve",
+        "title": "예약 관리"
+      },
+      {
+        "id": "11",
+        "path": "/campaign/tracking_manage",
+        "title": "트래킹 관리"
+      },
+      {
+        "id": "12",
+        "path": "/campaign/postback_manage",
+        "title": "포스트백 관리"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "title": "매체 관리",
+    "childs": [
+      {
+        "id": "14",
+        "path": "/app/app_search",
+        "title": "매체 조회"
+      },
+      {
+        "id": "15",
+        "path": "/app/app_manage",
+        "title": "매체 관리"
+      },
+      {
+        "id": "16",
+        "path": "/app/contract_manage",
+        "title": "계약 관리"
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "title": "리포트",
+    "childs": [
+      {
+        "id": "18",
+        "path": "/report/campaign_report",
+        "title": "캠페인 리포트"
+      },
+      {
+        "id": "19",
+        "path": "/report/campaign_summary_report",
+        "title": "캠페인 요약"
+      },
+      {
+        "id": "20",
+        "path": "/report/app_report",
+        "title": "매체별 리포트"
+      },
+      {
+        "id": "21",
+        "path": "/report/product_report",
+        "title": "상품별 리포트"
+      },
+      {
+        "id": "22",
+        "path": "/report/creative_report",
+        "title": "소재별 리포트"
+      },
+      {
+        "id": "23",
+        "path": "/report/report_upload",
+        "title": "데이터 업로드"
+      },
+      {
+        "id": "24",
+        "path": "/report/reserve_report",
+        "title": "리포트 예약"
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "title": "플래닝",
+    "childs": [
+      {
+        "id": "26",
+        "title": "시뮬레이션",
+        "childs": [
+          {
+            "id": "27",
+            "path": "/planning/plan_predict",
+            "title": "집행예정 vs 결과"
+          },
+          {
+            "id": "28",
+            "path": "/planning/budget_efficiency",
+            "title": "몬스터 믹스 vs 예산 효율화"
+          }
+        ]
+      },
+      {
+        "id": "29",
+        "path": "/planning/plan_forcasting",
+        "title": "Forecasting"
+      },
+      {
+        "id": "30",
+        "path": "/planning/plan_optimization",
+        "title": "Optimization"
+      }
+    ]
+  }
+]
