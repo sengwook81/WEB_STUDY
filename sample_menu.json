@@ -154,5 +154,49 @@
         "title": "Optimization"
       }
     ]
+  },
+  {
+    "id": "101",
+    "title": "SAMPLE",
+    "icon": "add",
+    "children": [
+      {
+        "id": "102",
+        "title": "Second",
+        "path": "/sample/page_1",
+        "icon": "add"
+      },
+      {
+        "id": "103",
+        "title": "Design1",
+        "path": "/sample/design_1",
+        "icon": "add"
+      },
+      {
+        "id": "104",
+        "title": "Design2",
+        "path": "/sample/design_2",
+        "icon": "add"
+      },
+      {
+        "id": "105",
+        "title": "사용자 관리",
+        "path": "/sample/user_test",
+        "icon": "add",
+        "home": true
+      },
+      {
+        "id": "106",
+        "title": "매체 관리",
+        "path": "/sample/design_3",
+        "icon": "add"
+      },
+      {
+        "id": "107",
+        "title": "내 정보",
+        "path": "/sample/info_test",
+        "icon": "add"
+      }
+    ]
   }
 ]
