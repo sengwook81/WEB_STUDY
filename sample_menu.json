@@ -2,7 +2,7 @@
   {
     "id": "1",
     "title": "사용자 관리",
-    "childs": [
+    "children": [
       {
         "id": "2",
         "path": "/account/account_list",
@@ -28,7 +28,7 @@
   {
     "id": "6",
     "title": "캠페인 관리",
-    "childs": [
+    "children": [
       {
         "id": "7",
         "path": "/campaign/campaign_search",
@@ -64,7 +64,7 @@
   {
     "id": "13",
     "title": "매체 관리",
-    "childs": [
+    "children": [
       {
         "id": "14",
         "path": "/app/app_search",
@@ -85,7 +85,7 @@
   {
     "id": "17",
     "title": "리포트",
-    "childs": [
+    "children": [
       {
         "id": "18",
         "path": "/report/campaign_report",
@@ -126,11 +126,11 @@
   {
     "id": "25",
     "title": "플래닝",
-    "childs": [
+    "children": [
       {
         "id": "26",
         "title": "시뮬레이션",
-        "childs": [
+        "children": [
           {
             "id": "27",
             "path": "/planning/plan_predict",
