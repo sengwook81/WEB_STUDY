@@ -161,7 +161,7 @@
     "icon": "add",
     "children": [
       {
-        "id": "102",
+        "id": "101",
         "title": "INPUT TEST",
         "path": "/sample/input_test"
       },
