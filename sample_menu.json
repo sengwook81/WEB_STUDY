@@ -196,6 +196,12 @@
         "title": "내 정보",
         "path": "/sample/info_test",
         "icon": "add"
+      },
+       {
+        "id": "109",
+        "title": "MultiDepth Module",
+        "path": "/sample/multidepth/multi_depth",
+        "icon": "add"
       }
     ]
   }
