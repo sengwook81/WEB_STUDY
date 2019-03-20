@@ -162,6 +162,11 @@
     "children": [
       {
         "id": "102",
+        "title": "INPUT TEST",
+        "path": "/sample/input_test"
+      },
+      {
+        "id": "102",
         "title": "Second",
         "path": "/sample/page_1",
         "icon": "add"
